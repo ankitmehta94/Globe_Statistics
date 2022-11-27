@@ -20,8 +20,13 @@
             const Globe = new ThreeGlobe()
                 .globeImageUrl('https://unpkg.com/three-globe@2.24.10/example/img/earth-blue-marble.jpg')
                 .polygonsData(countries.features.filter(d => d.properties.ISO_A2 !== 'AQ'))
-                .polygonCapColor(() => 'rgba(200, 0, 0, 0.7)')
-                .polygonSideColor(() => 'rgba(0, 200, 0, 0.1)')
+                .polygonCapMaterial((datum) => {
+                    const texture = new THREE.TextureLoader().load(`./flags/${datum.properties.POSTAL}.png`);
+                    console.log(texture, datum.properties.POSTAL)
+                    const material = new THREE.MeshBasicMaterial({ map: texture });
+                    return material
+                })
+                .polygonSideMaterial(() => 'rgba(0, 200, 0, 0.1)')
                 .polygonStrokeColor(() => '#111')
                 .polygonAltitude((x) => x.properties.POP_RANK / 20);
 
