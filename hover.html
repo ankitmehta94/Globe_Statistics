@@ -21,7 +21,7 @@
                 .globeImageUrl('https://unpkg.com/three-globe@2.24.10/example/img/earth-blue-marble.jpg')
                 .polygonsData(countries.features.filter(d => d.properties.ISO_A2 !== 'AQ'))
                 .polygonCapMaterial((datum) => {
-                    const texture = new THREE.TextureLoader().load(`./flags/${datum.properties.POSTAL}.png`);
+                    const texture = new THREE.TextureLoader().load(`https://raw.githubusercontent.com/ankitmehta94/Globe_Statistics/master/flags/${datum.properties.POSTAL}.png`);
                     console.log(texture, datum.properties.POSTAL)
                     const material = new THREE.MeshBasicMaterial({ map: texture });
                     return material
