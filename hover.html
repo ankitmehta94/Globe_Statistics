@@ -21,14 +21,14 @@
                 .globeImageUrl('https://unpkg.com/three-globe@2.24.10/example/img/earth-blue-marble.jpg')
                 .polygonsData(countries.features.filter(d => d.properties.ISO_A2 !== 'AQ'))
                 .polygonCapMaterial((datum) => {
-                    const texture = new THREE.TextureLoader().load(`https://raw.githubusercontent.com/ankitmehta94/Globe_Statistics/master/flags/${datum.properties.POSTAL}.png`);
+                    const texture = new THREE.TextureLoader().load(`https://raw.githubusercontent.com/ankitmehta94/Globe_Statistics/master/flags/${datum.properties.ISO_A2}.png`);
                     console.log(texture, datum.properties.POSTAL)
                     const material = new THREE.MeshBasicMaterial({ map: texture });
                     return material
                 })
                 .polygonSideMaterial(() => 'rgba(0, 200, 0, 0.1)')
                 .polygonStrokeColor(() => '#111')
-                .polygonAltitude((x) => x.properties.POP_RANK / 20);
+            // .polygonAltitude((x) => x.properties.POP_RANK / 20);
 
 
             // Setup renderer
