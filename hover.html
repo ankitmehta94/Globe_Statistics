@@ -8,6 +8,1349 @@
     <script src="https://unpkg.com/three@0.146.0/build/three.js"></script>
     <script src="https://unpkg.com/three/examples/js/controls/TrackballControls.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/three-globe@2.24.10/dist/three-globe.min.js"></script>
+    <script>
+        window.GDP = Object.values({
+            "0": {
+                "Country Code": "ABW",
+                "Country Name": "Aruba",
+                "GDP": 2496648044.6927375793,
+                "normalized_gdp": 0.1000876291
+            },
+            "1": {
+                "Country Code": "AFG",
+                "Country Name": "Afghanistan",
+                "GDP": 20116137325.8205528259,
+                "normalized_gdp": 0.1007220861
+            },
+            "2": {
+                "Country Code": "AGO",
+                "Country Name": "Angola",
+                "GDP": 72546985708.5706634521,
+                "normalized_gdp": 0.1026100589
+            },
+            "3": {
+                "Country Code": "ALB",
+                "Country Name": "Albania",
+                "GDP": 18260043499.8068008423,
+                "normalized_gdp": 0.1006552504
+            },
+            "4": {
+                "Country Code": "AND",
+                "Country Name": "Andorra",
+                "GDP": 3329910723.7607841492,
+                "normalized_gdp": 0.100117634
+            },
+            "5": {
+                "Country Code": "ARE",
+                "Country Name": "United Arab Emirates",
+                "GDP": 358868765174.9244384766,
+                "normalized_gdp": 0.1129201671
+            },
+            "6": {
+                "Country Code": "ARG",
+                "Country Name": "Argentina",
+                "GDP": 491492700657.0116577148,
+                "normalized_gdp": 0.1176957979
+            },
+            "7": {
+                "Country Code": "ARM",
+                "Country Name": "Armenia",
+                "GDP": 13861183873.5931091309,
+                "normalized_gdp": 0.1004968526
+            },
+            "8": {
+                "Country Code": "ASM",
+                "Country Name": "American Samoa",
+                "GDP": 709000000.0,
+                "normalized_gdp": 0.1000232581
+            },
+            "9": {
+                "Country Code": "ATG",
+                "Country Name": "Antigua and Barbuda",
+                "GDP": 1471125925.9259257317,
+                "normalized_gdp": 0.1000507013
+            },
+            "10": {
+                "Country Code": "AUS",
+                "Country Name": "Australia",
+                "GDP": 1542659899992.5366210938,
+                "normalized_gdp": 0.155547084
+            },
+            "11": {
+                "Country Code": "AUT",
+                "Country Name": "Austria",
+                "GDP": 477082467454.2946777344,
+                "normalized_gdp": 0.1171769025
+            },
+            "12": {
+                "Country Code": "AZE",
+                "Country Name": "Azerbaijan",
+                "GDP": 54622176470.5882339478,
+                "normalized_gdp": 0.1019646077
+            },
+            "13": {
+                "Country Code": "BDI",
+                "Country Name": "Burundi",
+                "GDP": 2902029385.825920105,
+                "normalized_gdp": 0.1001022265
+            },
+            "14": {
+                "Country Code": "BEL",
+                "Country Name": "Belgium",
+                "GDP": 599879025377.509765625,
+                "normalized_gdp": 0.1215986611
+            },
+            "15": {
+                "Country Code": "BEN",
+                "Country Name": "Benin",
+                "GDP": 17785640079.1191139221,
+                "normalized_gdp": 0.1006381676
+            },
+            "16": {
+                "Country Code": "BFA",
+                "Country Name": "Burkina Faso",
+                "GDP": 19737615114.3660736084,
+                "normalized_gdp": 0.100708456
+            },
+            "17": {
+                "Country Code": "BGD",
+                "Country Name": "Bangladesh",
+                "GDP": 416264942893.326171875,
+                "normalized_gdp": 0.1149869355
+            },
+            "18": {
+                "Country Code": "BGR",
+                "Country Name": "Bulgaria",
+                "GDP": 80271119426.1075592041,
+                "normalized_gdp": 0.1028881958
+            },
+            "19": {
+                "Country Code": "BHR",
+                "Country Name": "Bahrain",
+                "GDP": 38868663031.914894104,
+                "normalized_gdp": 0.1013973423
+            },
+            "20": {
+                "Country Code": "BHS",
+                "Country Name": "Bahamas, The",
+                "GDP": 11208600000.0,
+                "normalized_gdp": 0.1004013362
+            },
+            "21": {
+                "Country Code": "BIH",
+                "Country Name": "Bosnia and Herzegovina",
+                "GDP": 22571512867.2815856934,
+                "normalized_gdp": 0.1008105013
+            },
+            "22": {
+                "Country Code": "BLR",
+                "Country Name": "Belarus",
+                "GDP": 68218816484.1226119995,
+                "normalized_gdp": 0.1024542066
+            },
+            "23": {
+                "Country Code": "BLZ",
+                "Country Name": "Belize",
+                "GDP": 1789923264.0299999714,
+                "normalized_gdp": 0.1000621808
+            },
+            "24": {
+                "Country Code": "BMU",
+                "Country Name": "Bermuda",
+                "GDP": 7080900000.0,
+                "normalized_gdp": 0.1002527026
+            },
+            "25": {
+                "Country Code": "BOL",
+                "Country Name": "Bolivia",
+                "GDP": 40408208523.8784332275,
+                "normalized_gdp": 0.1014527795
+            },
+            "26": {
+                "Country Code": "BRA",
+                "Country Name": "Brazil",
+                "GDP": 1608981220812.2014160156,
+                "normalized_gdp": 0.1579352362
+            },
+            "27": {
+                "Country Code": "BRB",
+                "Country Name": "Barbados",
+                "GDP": 4900800000.0,
+                "normalized_gdp": 0.1001741998
+            },
+            "28": {
+                "Country Code": "BRN",
+                "Country Name": "Brunei Darussalam",
+                "GDP": 14006569575.6800117493,
+                "normalized_gdp": 0.1005020878
+            },
+            "29": {
+                "Country Code": "BTN",
+                "Country Name": "Bhutan",
+                "GDP": 2315436303.2998828888,
+                "normalized_gdp": 0.1000811039
+            },
+            "30": {
+                "Country Code": "BWA",
+                "Country Name": "Botswana",
+                "GDP": 17613846472.9916191101,
+                "normalized_gdp": 0.1006319816
+            },
+            "31": {
+                "Country Code": "CAN",
+                "Country Name": "Canada",
+                "GDP": 1990761609665.2297363281,
+                "normalized_gdp": 0.1716826959
+            },
+            "32": {
+                "Country Code": "CHE",
+                "Country Name": "Switzerland",
+                "GDP": 812866928867.4697265625,
+                "normalized_gdp": 0.1292681033
+            },
+            "33": {
+                "Country Code": "CHI",
+                "Country Name": "Channel Islands",
+                "GDP": 11515258634.0085124969,
+                "normalized_gdp": 0.1004123786
+            },
+            "34": {
+                "Country Code": "CHL",
+                "Country Name": "Chile",
+                "GDP": 317058508651.7600097656,
+                "normalized_gdp": 0.1114146292
+            },
+            "35": {
+                "Country Code": "CHN",
+                "Country Name": "China",
+                "GDP": 17734062645371.375,
+                "normalized_gdp": 0.7385803232
+            },
+            "36": {
+                "Country Code": "CIV",
+                "Country Name": "Cote d'Ivoire",
+                "GDP": 69764827467.4422912598,
+                "normalized_gdp": 0.1025098766
+            },
+            "37": {
+                "Country Code": "CMR",
+                "Country Name": "Cameroon",
+                "GDP": 45238613479.8307800293,
+                "normalized_gdp": 0.1016267167
+            },
+            "38": {
+                "Country Code": "COD",
+                "Country Name": "Congo, Dem. Rep.",
+                "GDP": 53958573693.0513153076,
+                "normalized_gdp": 0.1019407122
+            },
+            "39": {
+                "Country Code": "COG",
+                "Country Name": "Congo, Rep.",
+                "GDP": 12523961677.2965831757,
+                "normalized_gdp": 0.1004487008
+            },
+            "40": {
+                "Country Code": "COL",
+                "Country Name": "Colombia",
+                "GDP": 314322453228.2952880859,
+                "normalized_gdp": 0.1113161071
+            },
+            "41": {
+                "Country Code": "COM",
+                "Country Name": "Comoros",
+                "GDP": 1327964249.3264908791,
+                "normalized_gdp": 0.1000455462
+            },
+            "42": {
+                "Country Code": "CPV",
+                "Country Name": "Cabo Verde",
+                "GDP": 1936174043.4529345036,
+                "normalized_gdp": 0.1000674471
+            },
+            "43": {
+                "Country Code": "CRI",
+                "Country Name": "Costa Rica",
+                "GDP": 64282438666.7390441895,
+                "normalized_gdp": 0.1023124623
+            },
+            "44": {
+                "Country Code": "CSS",
+                "Country Name": "Caribbean small states",
+                "GDP": 69970323144.2874755859,
+                "normalized_gdp": 0.1025172763
+            },
+            "45": {
+                "Country Code": "CUB",
+                "Country Name": "Cuba",
+                "GDP": 107352000000.0,
+                "normalized_gdp": 0.1038633462
+            },
+            "46": {
+                "Country Code": "CUW",
+                "Country Name": "Curacao",
+                "GDP": 2496174735.6470217705,
+                "normalized_gdp": 0.1000876121
+            },
+            "47": {
+                "Country Code": "CYM",
+                "Country Name": "Cayman Islands",
+                "GDP": 5608989195.5291976929,
+                "normalized_gdp": 0.1001997009
+            },
+            "48": {
+                "Country Code": "CYP",
+                "Country Name": "Cyprus",
+                "GDP": 27719337670.0177383423,
+                "normalized_gdp": 0.1009958683
+            },
+            "49": {
+                "Country Code": "CZE",
+                "Country Name": "Czechia",
+                "GDP": 282340849856.6141357422,
+                "normalized_gdp": 0.1101644875
+            },
+            "50": {
+                "Country Code": "DEU",
+                "Country Name": "Germany",
+                "GDP": 4223116205968.9243164062,
+                "normalized_gdp": 0.2520671414
+            },
+            "51": {
+                "Country Code": "DJI",
+                "Country Name": "Djibouti",
+                "GDP": 3371102123.5134277344,
+                "normalized_gdp": 0.1001191172
+            },
+            "52": {
+                "Country Code": "DMA",
+                "Country Name": "Dominica",
+                "GDP": 545618518.5185184479,
+                "normalized_gdp": 0.1000173749
+            },
+            "53": {
+                "Country Code": "DNK",
+                "Country Name": "Denmark",
+                "GDP": 397104343478.3010253906,
+                "normalized_gdp": 0.114296985
+            },
+            "54": {
+                "Country Code": "DOM",
+                "Country Name": "Dominican Republic",
+                "GDP": 94243453937.4461517334,
+                "normalized_gdp": 0.103391323
+            },
+            "55": {
+                "Country Code": "DZA",
+                "Country Name": "Algeria",
+                "GDP": 167983141738.3114929199,
+                "normalized_gdp": 0.1060466018
+            },
+            "56": {
+                "Country Code": "ECU",
+                "Country Name": "Ecuador",
+                "GDP": 106165866000.0,
+                "normalized_gdp": 0.1038206349
+            },
+            "57": {
+                "Country Code": "EGY",
+                "Country Name": "Egypt, Arab Rep.",
+                "GDP": 404142766093.0529174805,
+                "normalized_gdp": 0.1145504302
+            },
+            "58": {
+                "Country Code": "EMU",
+                "Country Name": "Euro area",
+                "GDP": 14493212396452.548828125,
+                "normalized_gdp": 0.6218811435
+            },
+            "59": {
+                "Country Code": "ERI",
+                "Country Name": "Eritrea",
+                "GDP": 2065001626.0162601471,
+                "normalized_gdp": 0.1000720861
+            },
+            "60": {
+                "Country Code": "ESP",
+                "Country Name": "Spain",
+                "GDP": 1425276586282.9228515625,
+                "normalized_gdp": 0.1513202499
+            },
+            "61": {
+                "Country Code": "EST",
+                "Country Name": "Estonia",
+                "GDP": 36262924353.6040649414,
+                "normalized_gdp": 0.1013035128
+            },
+            "62": {
+                "Country Code": "ETH",
+                "Country Name": "Ethiopia",
+                "GDP": 111271112329.974899292,
+                "normalized_gdp": 0.1040044688
+            },
+            "63": {
+                "Country Code": "EUU",
+                "Country Name": "European Union",
+                "GDP": 17088620744318.82421875,
+                "normalized_gdp": 0.7153387246
+            },
+            "64": {
+                "Country Code": "FIN",
+                "Country Name": "Finland",
+                "GDP": 299155237589.1424560547,
+                "normalized_gdp": 0.1107699537
+            },
+            "65": {
+                "Country Code": "FJI",
+                "Country Name": "Fiji",
+                "GDP": 4592118709.5527858734,
+                "normalized_gdp": 0.1001630846
+            },
+            "66": {
+                "Country Code": "FRA",
+                "Country Name": "France",
+                "GDP": 2937472757953.44140625,
+                "normalized_gdp": 0.2057726433
+            },
+            "67": {
+                "Country Code": "FRO",
+                "Country Name": "Faroe Islands",
+                "GDP": 3240759988.9945278168,
+                "normalized_gdp": 0.1001144237
+            },
+            "68": {
+                "Country Code": "FSM",
+                "Country Name": "Micronesia, Fed. Sts.",
+                "GDP": 404178049.7539779544,
+                "normalized_gdp": 0.1000122818
+            },
+            "69": {
+                "Country Code": "GAB",
+                "Country Name": "Gabon",
+                "GDP": 18269350433.7992477417,
+                "normalized_gdp": 0.1006555855
+            },
+            "70": {
+                "Country Code": "GBR",
+                "Country Name": "United Kingdom",
+                "GDP": 3186859739185.0244140625,
+                "normalized_gdp": 0.2147527732
+            },
+            "71": {
+                "Country Code": "GEO",
+                "Country Name": "Georgia",
+                "GDP": 18700241392.1574707031,
+                "normalized_gdp": 0.1006711014
+            },
+            "72": {
+                "Country Code": "GHA",
+                "Country Name": "Ghana",
+                "GDP": 77594279054.8795471191,
+                "normalized_gdp": 0.1027918059
+            },
+            "73": {
+                "Country Code": "GIN",
+                "Country Name": "Guinea",
+                "GDP": 15850520383.9941272736,
+                "normalized_gdp": 0.1005684863
+            },
+            "74": {
+                "Country Code": "GMB",
+                "Country Name": "Gambia, The",
+                "GDP": 2078070683.5468606949,
+                "normalized_gdp": 0.1000725567
+            },
+            "75": {
+                "Country Code": "GNB",
+                "Country Name": "Guinea-Bissau",
+                "GDP": 1638517533.1650366783,
+                "normalized_gdp": 0.1000567289
+            },
+            "76": {
+                "Country Code": "GNQ",
+                "Country Name": "Equatorial Guinea",
+                "GDP": 12269392788.740190506,
+                "normalized_gdp": 0.1004395341
+            },
+            "77": {
+                "Country Code": "GRC",
+                "Country Name": "Greece",
+                "GDP": 216240589485.2562255859,
+                "normalized_gdp": 0.1077842954
+            },
+            "78": {
+                "Country Code": "GRD",
+                "Country Name": "Grenada",
+                "GDP": 1122083185.185185194,
+                "normalized_gdp": 0.1000381327
+            },
+            "79": {
+                "Country Code": "GRL",
+                "Country Name": "Greenland",
+                "GDP": 3075968328.6967687607,
+                "normalized_gdp": 0.1001084898
+            },
+            "80": {
+                "Country Code": "GTM",
+                "Country Name": "Guatemala",
+                "GDP": 85986321551.2388458252,
+                "normalized_gdp": 0.1030939934
+            },
+            "81": {
+                "Country Code": "GUM",
+                "Country Name": "Guam",
+                "GDP": 5844000000.0,
+                "normalized_gdp": 0.1002081633
+            },
+            "82": {
+                "Country Code": "GUY",
+                "Country Name": "Guyana",
+                "GDP": 7409179920.8633089066,
+                "normalized_gdp": 0.1002645236
+            },
+            "83": {
+                "Country Code": "HKG",
+                "Country Name": "Hong Kong SAR, China",
+                "GDP": 368139247671.4866333008,
+                "normalized_gdp": 0.1132539862
+            },
+            "84": {
+                "Country Code": "HND",
+                "Country Name": "Honduras",
+                "GDP": 28488668301.6401100159,
+                "normalized_gdp": 0.101023571
+            },
+            "85": {
+                "Country Code": "HRV",
+                "Country Name": "Croatia",
+                "GDP": 67837788543.5851516724,
+                "normalized_gdp": 0.1024404862
+            },
+            "86": {
+                "Country Code": "HTI",
+                "Country Name": "Haiti",
+                "GDP": 20944392615.0802688599,
+                "normalized_gdp": 0.1007519106
+            },
+            "87": {
+                "Country Code": "HUN",
+                "Country Name": "Hungary",
+                "GDP": 182280517581.2124633789,
+                "normalized_gdp": 0.1065614334
+            },
+            "88": {
+                "Country Code": "IDN",
+                "Country Name": "Indonesia",
+                "GDP": 1186092991320.0375976562,
+                "normalized_gdp": 0.1427075319
+            },
+            "89": {
+                "Country Code": "IDX",
+                "Country Name": "IDA only",
+                "GDP": 1455496866167.8803710938,
+                "normalized_gdp": 0.1524084464
+            },
+            "90": {
+                "Country Code": "IMN",
+                "Country Name": "Isle of Man",
+                "GDP": 7315388052.0806741714,
+                "normalized_gdp": 0.1002611463
+            },
+            "91": {
+                "Country Code": "IND",
+                "Country Name": "India",
+                "GDP": 3173397590816.9086914062,
+                "normalized_gdp": 0.2142680171
+            },
+            "92": {
+                "Country Code": "IRL",
+                "Country Name": "Ireland",
+                "GDP": 498559576714.7206420898,
+                "normalized_gdp": 0.1179502678
+            },
+            "93": {
+                "Country Code": "IRN",
+                "Country Name": "Iran, Islamic Rep.",
+                "GDP": 231547571240.4693908691,
+                "normalized_gdp": 0.1083354817
+            },
+            "94": {
+                "Country Code": "IRQ",
+                "Country Name": "Iraq",
+                "GDP": 207889333724.1379394531,
+                "normalized_gdp": 0.1074835765
+            },
+            "95": {
+                "Country Code": "ISL",
+                "Country Name": "Iceland",
+                "GDP": 25458933915.8741722107,
+                "normalized_gdp": 0.1009144739
+            },
+            "96": {
+                "Country Code": "ISR",
+                "Country Name": "Israel",
+                "GDP": 481591266133.4091186523,
+                "normalized_gdp": 0.117339259
+            },
+            "97": {
+                "Country Code": "ITA",
+                "Country Name": "Italy",
+                "GDP": 2099880198258.8811035156,
+                "normalized_gdp": 0.1756119271
+            },
+            "98": {
+                "Country Code": "JAM",
+                "Country Name": "Jamaica",
+                "GDP": 13638230995.6789932251,
+                "normalized_gdp": 0.1004888244
+            },
+            "99": {
+                "Country Code": "JOR",
+                "Country Name": "Jordan",
+                "GDP": 45243661971.8309860229,
+                "normalized_gdp": 0.1016268985
+            },
+            "100": {
+                "Country Code": "JPN",
+                "Country Name": "Japan",
+                "GDP": 4937421880461.5478515625,
+                "normalized_gdp": 0.2777884429
+            },
+            "101": {
+                "Country Code": "KAZ",
+                "Country Name": "Kazakhstan",
+                "GDP": 190814274226.2110900879,
+                "normalized_gdp": 0.1068687239
+            },
+            "102": {
+                "Country Code": "KEN",
+                "Country Name": "Kenya",
+                "GDP": 110347079517.3558044434,
+                "normalized_gdp": 0.1039711955
+            },
+            "103": {
+                "Country Code": "KGZ",
+                "Country Name": "Kyrgyz Republic",
+                "GDP": 8543423502.6133966446,
+                "normalized_gdp": 0.1003053664
+            },
+            "104": {
+                "Country Code": "KHM",
+                "Country Name": "Cambodia",
+                "GDP": 26961061119.7956619263,
+                "normalized_gdp": 0.1009685637
+            },
+            "105": {
+                "Country Code": "KIR",
+                "Country Name": "Kiribati",
+                "GDP": 180911843.6446218193,
+                "normalized_gdp": 0.1000042422
+            },
+            "106": {
+                "Country Code": "KNA",
+                "Country Name": "St. Kitts and Nevis",
+                "GDP": 976150666.6666666269,
+                "normalized_gdp": 0.1000328778
+            },
+            "107": {
+                "Country Code": "KOR",
+                "Country Name": "Korea, Rep.",
+                "GDP": 1798533915091.1357421875,
+                "normalized_gdp": 0.1647608043
+            },
+            "108": {
+                "Country Code": "KWT",
+                "Country Name": "Kuwait",
+                "GDP": 105960225688.145324707,
+                "normalized_gdp": 0.1038132301
+            },
+            "109": {
+                "Country Code": "LAO",
+                "Country Name": "Lao PDR",
+                "GDP": 18827148530.0150985718,
+                "normalized_gdp": 0.1006756711
+            },
+            "110": {
+                "Country Code": "LBN",
+                "Country Name": "Lebanon",
+                "GDP": 18076624840.1840744019,
+                "normalized_gdp": 0.1006486457
+            },
+            "111": {
+                "Country Code": "LBR",
+                "Country Name": "Liberia",
+                "GDP": 3486741370.0,
+                "normalized_gdp": 0.1001232812
+            },
+            "112": {
+                "Country Code": "LBY",
+                "Country Name": "Libya",
+                "GDP": 41879579677.1747360229,
+                "normalized_gdp": 0.1015057619
+            },
+            "113": {
+                "Country Code": "LCA",
+                "Country Name": "St. Lucia",
+                "GDP": 1764901133.3333332539,
+                "normalized_gdp": 0.1000612798
+            },
+            "114": {
+                "Country Code": "LCN",
+                "Country Name": "Latin America & Caribbean",
+                "GDP": 5488720386464.8984375,
+                "normalized_gdp": 0.2976400492
+            },
+            "115": {
+                "Country Code": "LIE",
+                "Country Name": "Liechtenstein",
+                "GDP": 6427248943.449385643,
+                "normalized_gdp": 0.1002291654
+            },
+            "116": {
+                "Country Code": "LKA",
+                "Country Name": "Sri Lanka",
+                "GDP": 84518830392.6157073975,
+                "normalized_gdp": 0.1030411508
+            },
+            "117": {
+                "Country Code": "LSO",
+                "Country Name": "Lesotho",
+                "GDP": 2518468891.0391306877,
+                "normalized_gdp": 0.1000884149
+            },
+            "118": {
+                "Country Code": "LTU",
+                "Country Name": "Lithuania",
+                "GDP": 65503849704.5997238159,
+                "normalized_gdp": 0.1023564439
+            },
+            "119": {
+                "Country Code": "LUX",
+                "Country Name": "Luxembourg",
+                "GDP": 86710803337.0993804932,
+                "normalized_gdp": 0.1031200812
+            },
+            "120": {
+                "Country Code": "LVA",
+                "Country Name": "Latvia",
+                "GDP": 38872546228.5652694702,
+                "normalized_gdp": 0.1013974822
+            },
+            "121": {
+                "Country Code": "MAC",
+                "Country Name": "Macao SAR, China",
+                "GDP": 29905190181.7500495911,
+                "normalized_gdp": 0.1010745783
+            },
+            "122": {
+                "Country Code": "MAF",
+                "Country Name": "St. Martin (French part)",
+                "GDP": 772921756.3471879959,
+                "normalized_gdp": 0.1000255598
+            },
+            "123": {
+                "Country Code": "MAR",
+                "Country Name": "Morocco",
+                "GDP": 132725261467.4306030273,
+                "normalized_gdp": 0.1047770073
+            },
+            "124": {
+                "Country Code": "MCO",
+                "Country Name": "Monaco",
+                "GDP": 6816219303.2552833557,
+                "normalized_gdp": 0.1002431718
+            },
+            "125": {
+                "Country Code": "MDA",
+                "Country Name": "Moldova",
+                "GDP": 13679221333.2051963806,
+                "normalized_gdp": 0.1004903004
+            },
+            "126": {
+                "Country Code": "MDG",
+                "Country Name": "Madagascar",
+                "GDP": 14637400395.6889762878,
+                "normalized_gdp": 0.1005248033
+            },
+            "127": {
+                "Country Code": "MDV",
+                "Country Name": "Maldives",
+                "GDP": 4889666931.6385536194,
+                "normalized_gdp": 0.1001737989
+            },
+            "128": {
+                "Country Code": "MEX",
+                "Country Name": "Mexico",
+                "GDP": 1293037866360.1743164062,
+                "normalized_gdp": 0.1465584902
+            },
+            "129": {
+                "Country Code": "MHL",
+                "Country Name": "Marshall Islands",
+                "GDP": 248665600.0,
+                "normalized_gdp": 0.100006682
+            },
+            "130": {
+                "Country Code": "MKD",
+                "Country Name": "North Macedonia",
+                "GDP": 13879269151.5717926025,
+                "normalized_gdp": 0.1004975039
+            },
+            "131": {
+                "Country Code": "MLI",
+                "Country Name": "Mali",
+                "GDP": 19143741503.1481628418,
+                "normalized_gdp": 0.1006870713
+            },
+            "132": {
+                "Country Code": "MLT",
+                "Country Name": "Malta",
+                "GDP": 17189730469.5553588867,
+                "normalized_gdp": 0.1006167096
+            },
+            "133": {
+                "Country Code": "MMR",
+                "Country Name": "Myanmar",
+                "GDP": 65067808984.6791610718,
+                "normalized_gdp": 0.1023407426
+            },
+            "134": {
+                "Country Code": "MNE",
+                "Country Name": "Montenegro",
+                "GDP": 5809170961.7828521729,
+                "normalized_gdp": 0.1002069092
+            },
+            "135": {
+                "Country Code": "MNG",
+                "Country Name": "Mongolia",
+                "GDP": 15098022828.610622406,
+                "normalized_gdp": 0.1005413897
+            },
+            "136": {
+                "Country Code": "MNP",
+                "Country Name": "Northern Mariana Islands",
+                "GDP": 1182000000.0,
+                "normalized_gdp": 0.1000402902
+            },
+            "137": {
+                "Country Code": "MOZ",
+                "Country Name": "Mozambique",
+                "GDP": 16095828896.63422966,
+                "normalized_gdp": 0.1005773195
+            },
+            "138": {
+                "Country Code": "MRT",
+                "Country Name": "Mauritania",
+                "GDP": 8227580740.4988927841,
+                "normalized_gdp": 0.1002939932
+            },
+            "139": {
+                "Country Code": "MUS",
+                "Country Name": "Mauritius",
+                "GDP": 11156657769.6973762512,
+                "normalized_gdp": 0.1003994658
+            },
+            "140": {
+                "Country Code": "MWI",
+                "Country Name": "Malawi",
+                "GDP": 12626718073.7438774109,
+                "normalized_gdp": 0.100452401
+            },
+            "141": {
+                "Country Code": "MYS",
+                "Country Name": "Malaysia",
+                "GDP": 372701358820.2640380859,
+                "normalized_gdp": 0.1134182624
+            },
+            "142": {
+                "Country Code": "NAC",
+                "Country Name": "North America",
+                "GDP": 24993942509665.2265625,
+                "normalized_gdp": 1.0
+            },
+            "143": {
+                "Country Code": "NAM",
+                "Country Name": "Namibia",
+                "GDP": 12236250784.1335582733,
+                "normalized_gdp": 0.1004383407
+            },
+            "144": {
+                "Country Code": "NCL",
+                "Country Name": "New Caledonia",
+                "GDP": 9435529927.2470989227,
+                "normalized_gdp": 0.1003374901
+            },
+            "145": {
+                "Country Code": "NER",
+                "Country Name": "Niger",
+                "GDP": 14950949875.2729110718,
+                "normalized_gdp": 0.1005360938
+            },
+            "146": {
+                "Country Code": "NGA",
+                "Country Name": "Nigeria",
+                "GDP": 440776971536.0147705078,
+                "normalized_gdp": 0.1158695846
+            },
+            "147": {
+                "Country Code": "NIC",
+                "Country Name": "Nicaragua",
+                "GDP": 14013022092.0644855499,
+                "normalized_gdp": 0.1005023201
+            },
+            "148": {
+                "Country Code": "NLD",
+                "Country Name": "Netherlands",
+                "GDP": 1018007056949.5960693359,
+                "normalized_gdp": 0.1366549564
+            },
+            "149": {
+                "Country Code": "NOR",
+                "Country Name": "Norway",
+                "GDP": 482437019790.4540405273,
+                "normalized_gdp": 0.1173697136
+            },
+            "150": {
+                "Country Code": "NPL",
+                "Country Name": "Nepal",
+                "GDP": 36288830373.4106140137,
+                "normalized_gdp": 0.1013044456
+            },
+            "151": {
+                "Country Code": "NRU",
+                "Country Name": "Nauru",
+                "GDP": 133218896.9326069057,
+                "normalized_gdp": 0.1000025249
+            },
+            "152": {
+                "Country Code": "NZL",
+                "Country Name": "New Zealand",
+                "GDP": 249991512236.5256958008,
+                "normalized_gdp": 0.1089996261
+            },
+            "153": {
+                "Country Code": "OMN",
+                "Country Name": "Oman",
+                "GDP": 85868626527.9583892822,
+                "normalized_gdp": 0.1030897554
+            },
+            "154": {
+                "Country Code": "PAK",
+                "Country Name": "Pakistan",
+                "GDP": 346343170486.0718994141,
+                "normalized_gdp": 0.1124691352
+            },
+            "155": {
+                "Country Code": "PAN",
+                "Country Name": "Panama",
+                "GDP": 63605065800.0,
+                "normalized_gdp": 0.1022880709
+            },
+            "156": {
+                "Country Code": "PER",
+                "Country Name": "Peru",
+                "GDP": 223249497500.3865356445,
+                "normalized_gdp": 0.1080366778
+            },
+            "157": {
+                "Country Code": "PHL",
+                "Country Name": "Philippines",
+                "GDP": 394086419343.055847168,
+                "normalized_gdp": 0.1141883131
+            },
+            "158": {
+                "Country Code": "PLW",
+                "Country Name": "Palau",
+                "GDP": 257700000.0,
+                "normalized_gdp": 0.1000070073
+            },
+            "159": {
+                "Country Code": "PNG",
+                "Country Name": "Papua New Guinea",
+                "GDP": 26594277245.7820358276,
+                "normalized_gdp": 0.1009553562
+            },
+            "160": {
+                "Country Code": "POL",
+                "Country Name": "Poland",
+                "GDP": 674048266397.369140625,
+                "normalized_gdp": 0.1242694077
+            },
+            "161": {
+                "Country Code": "PRI",
+                "Country Name": "Puerto Rico",
+                "GDP": 103138300000.0,
+                "normalized_gdp": 0.1037116159
+            },
+            "162": {
+                "Country Code": "PRT",
+                "Country Name": "Portugal",
+                "GDP": 249886464354.7518005371,
+                "normalized_gdp": 0.1089958435
+            },
+            "163": {
+                "Country Code": "PRY",
+                "Country Name": "Paraguay",
+                "GDP": 38986810989.0010681152,
+                "normalized_gdp": 0.1014015967
+            },
+            "164": {
+                "Country Code": "PSE",
+                "Country Name": "West Bank and Gaza",
+                "GDP": 18036800000.0,
+                "normalized_gdp": 0.1006472116
+            },
+            "165": {
+                "Country Code": "PSS",
+                "Country Name": "Pacific island small states",
+                "GDP": 9749476210.0164279938,
+                "normalized_gdp": 0.1003487949
+            },
+            "166": {
+                "Country Code": "PYF",
+                "Country Name": "French Polynesia",
+                "GDP": 5669368717.20723629,
+                "normalized_gdp": 0.1002018751
+            },
+            "167": {
+                "Country Code": "QAT",
+                "Country Name": "Qatar",
+                "GDP": 179570783550.5489196777,
+                "normalized_gdp": 0.1064638591
+            },
+            "168": {
+                "Country Code": "ROU",
+                "Country Name": "Romania",
+                "GDP": 284087563695.7984619141,
+                "normalized_gdp": 0.1102273846
+            },
+            "169": {
+                "Country Code": "RUS",
+                "Country Name": "Russian Federation",
+                "GDP": 1775799919352.9772949219,
+                "normalized_gdp": 0.16394218
+            },
+            "170": {
+                "Country Code": "RWA",
+                "Country Name": "Rwanda",
+                "GDP": 11070356519.4803924561,
+                "normalized_gdp": 0.1003963582
+            },
+            "171": {
+                "Country Code": "SAS",
+                "Country Name": "South Asia",
+                "GDP": 4087773969795.4765625,
+                "normalized_gdp": 0.2471936278
+            },
+            "172": {
+                "Country Code": "SAU",
+                "Country Name": "Saudi Arabia",
+                "GDP": 833541236569.3146972656,
+                "normalized_gdp": 0.1300125607
+            },
+            "173": {
+                "Country Code": "SDN",
+                "Country Name": "Sudan",
+                "GDP": 34326058557.4358978271,
+                "normalized_gdp": 0.1012337685
+            },
+            "174": {
+                "Country Code": "SEN",
+                "Country Name": "Senegal",
+                "GDP": 27625388352.1687774658,
+                "normalized_gdp": 0.1009924853
+            },
+            "175": {
+                "Country Code": "SGP",
+                "Country Name": "Singapore",
+                "GDP": 396986899888.3513183594,
+                "normalized_gdp": 0.114292756
+            },
+            "176": {
+                "Country Code": "SLB",
+                "Country Name": "Solomon Islands",
+                "GDP": 1645213881.6201570034,
+                "normalized_gdp": 0.10005697
+            },
+            "177": {
+                "Country Code": "SLE",
+                "Country Name": "Sierra Leone",
+                "GDP": 4200380124.3291149139,
+                "normalized_gdp": 0.1001489785
+            },
+            "178": {
+                "Country Code": "SLV",
+                "Country Name": "El Salvador",
+                "GDP": 28736940000.0,
+                "normalized_gdp": 0.101032511
+            },
+            "179": {
+                "Country Code": "SMR",
+                "Country Name": "San Marino",
+                "GDP": 1544713784.6767094135,
+                "normalized_gdp": 0.1000533511
+            },
+            "180": {
+                "Country Code": "SOM",
+                "Country Name": "Somalia",
+                "GDP": 7292721820.0000114441,
+                "normalized_gdp": 0.1002603301
+            },
+            "181": {
+                "Country Code": "SRB",
+                "Country Name": "Serbia",
+                "GDP": 63068134601.1253967285,
+                "normalized_gdp": 0.1022687367
+            },
+            "182": {
+                "Country Code": "SSD",
+                "Country Name": "South Sudan",
+                "GDP": 11997800760.2241821289,
+                "normalized_gdp": 0.1004297544
+            },
+            "183": {
+                "Country Code": "SST",
+                "Country Name": "Small states",
+                "GDP": 526938134965.750793457,
+                "normalized_gdp": 0.1189721461
+            },
+            "184": {
+                "Country Code": "STP",
+                "Country Name": "Sao Tome and Principe",
+                "GDP": 547092915.036334157,
+                "normalized_gdp": 0.100017428
+            },
+            "185": {
+                "Country Code": "SUR",
+                "Country Name": "Suriname",
+                "GDP": 2862131979.6954317093,
+                "normalized_gdp": 0.1001007898
+            },
+            "186": {
+                "Country Code": "SVK",
+                "Country Name": "Slovak Republic",
+                "GDP": 114870706410.1648254395,
+                "normalized_gdp": 0.1041340859
+            },
+            "187": {
+                "Country Code": "SVN",
+                "Country Name": "Slovenia",
+                "GDP": 61526331889.4990081787,
+                "normalized_gdp": 0.1022132182
+            },
+            "188": {
+                "Country Code": "SWE",
+                "Country Name": "Sweden",
+                "GDP": 627437898887.2904052734,
+                "normalized_gdp": 0.1225910235
+            },
+            "189": {
+                "Country Code": "SWZ",
+                "Country Name": "Eswatini",
+                "GDP": 4941373182.0826063156,
+                "normalized_gdp": 0.1001756608
+            },
+            "190": {
+                "Country Code": "SXM",
+                "Country Name": "Sint Maarten (Dutch part)",
+                "GDP": 1185474860.3351955414,
+                "normalized_gdp": 0.1000404154
+            },
+            "191": {
+                "Country Code": "SYC",
+                "Country Name": "Seychelles",
+                "GDP": 1320053793.0390310287,
+                "normalized_gdp": 0.1000452614
+            },
+            "192": {
+                "Country Code": "SYR",
+                "Country Name": "Syrian Arab Republic",
+                "GDP": 21445775363.8597488403,
+                "normalized_gdp": 0.1007699648
+            },
+            "193": {
+                "Country Code": "TCA",
+                "Country Name": "Turks and Caicos Islands",
+                "GDP": 943269768.0,
+                "normalized_gdp": 0.1000316938
+            },
+            "194": {
+                "Country Code": "TCD",
+                "Country Name": "Chad",
+                "GDP": 11779980801.7842826843,
+                "normalized_gdp": 0.100421911
+            },
+            "195": {
+                "Country Code": "TGO",
+                "Country Name": "Togo",
+                "GDP": 8413200567.6151018143,
+                "normalized_gdp": 0.1003006772
+            },
+            "196": {
+                "Country Code": "THA",
+                "Country Name": "Thailand",
+                "GDP": 505981655622.3046875,
+                "normalized_gdp": 0.118217528
+            },
+            "197": {
+                "Country Code": "TJK",
+                "Country Name": "Tajikistan",
+                "GDP": 8746270636.4014186859,
+                "normalized_gdp": 0.1003126707
+            },
+            "198": {
+                "Country Code": "TKM",
+                "Country Name": "Turkmenistan",
+                "GDP": 45231428571.4285736084,
+                "normalized_gdp": 0.101626458
+            },
+            "199": {
+                "Country Code": "TLS",
+                "Country Name": "Timor-Leste",
+                "GDP": 1959134743.8354101181,
+                "normalized_gdp": 0.1000682739
+            },
+            "200": {
+                "Country Code": "TON",
+                "Country Name": "Tonga",
+                "GDP": 488829964.0708194971,
+                "normalized_gdp": 0.10001533
+            },
+            "201": {
+                "Country Code": "TSS",
+                "Country Name": "Sub-Saharan Africa (IDA & IBRD countries)",
+                "GDP": 1917904004877.7075195312,
+                "normalized_gdp": 0.1690591799
+            },
+            "202": {
+                "Country Code": "TTO",
+                "Country Name": "Trinidad and Tobago",
+                "GDP": 21391802311.0117645264,
+                "normalized_gdp": 0.1007680213
+            },
+            "203": {
+                "Country Code": "TUN",
+                "Country Name": "Tunisia",
+                "GDP": 46840042941.4922103882,
+                "normalized_gdp": 0.1016843823
+            },
+            "204": {
+                "Country Code": "TUR",
+                "Country Name": "Turkiye",
+                "GDP": 815271751724.4229736328,
+                "normalized_gdp": 0.1293546982
+            },
+            "205": {
+                "Country Code": "TUV",
+                "Country Name": "Tuvalu",
+                "GDP": 63100961.5384615436,
+                "normalized_gdp": 0.1
+            },
+            "206": {
+                "Country Code": "TZA",
+                "Country Name": "Tanzania",
+                "GDP": 67775101794.3478240967,
+                "normalized_gdp": 0.102438229
+            },
+            "207": {
+                "Country Code": "UGA",
+                "Country Name": "Uganda",
+                "GDP": 40434701516.9527816772,
+                "normalized_gdp": 0.1014537335
+            },
+            "208": {
+                "Country Code": "UKR",
+                "Country Name": "Ukraine",
+                "GDP": 200085537744.3542785645,
+                "normalized_gdp": 0.1072025711
+            },
+            "209": {
+                "Country Code": "URY",
+                "Country Name": "Uruguay",
+                "GDP": 59319547636.0875549316,
+                "normalized_gdp": 0.1021337545
+            },
+            "210": {
+                "Country Code": "USA",
+                "Country Name": "United States",
+                "GDP": 22996100000000.0,
+                "normalized_gdp": 0.9280600571
+            },
+            "211": {
+                "Country Code": "UZB",
+                "Country Name": "Uzbekistan",
+                "GDP": 69238903106.1737670898,
+                "normalized_gdp": 0.1024909387
+            },
+            "212": {
+                "Country Code": "VCT",
+                "Country Name": "St. Vincent and the Grenadines",
+                "GDP": 889775243.3783518076,
+                "normalized_gdp": 0.1000297676
+            },
+            "213": {
+                "Country Code": "VEN",
+                "Country Name": "Venezuela, RB",
+                "GDP": 482359318767.703125,
+                "normalized_gdp": 0.1173669157
+            },
+            "214": {
+                "Country Code": "VIR",
+                "Country Name": "Virgin Islands (U.S.)",
+                "GDP": 4204000000.0,
+                "normalized_gdp": 0.1001491089
+            },
+            "215": {
+                "Country Code": "VNM",
+                "Country Name": "Vietnam",
+                "GDP": 362637524070.9686279297,
+                "normalized_gdp": 0.1130558756
+            },
+            "216": {
+                "Country Code": "VUT",
+                "Country Name": "Vanuatu",
+                "GDP": 983469256.8496289253,
+                "normalized_gdp": 0.1000331414
+            },
+            "217": {
+                "Country Code": "WSM",
+                "Country Name": "Samoa",
+                "GDP": 788389971.6030653715,
+                "normalized_gdp": 0.1000261168
+            },
+            "218": {
+                "Country Code": "XKX",
+                "Country Name": "Kosovo",
+                "GDP": 9007159195.7421646118,
+                "normalized_gdp": 0.1003220649
+            },
+            "219": {
+                "Country Code": "YEM",
+                "Country Name": "Yemen, Rep.",
+                "GDP": 21061691629.5368881226,
+                "normalized_gdp": 0.1007561344
+            },
+            "220": {
+                "Country Code": "ZAF",
+                "Country Name": "South Africa",
+                "GDP": 419946428126.0075683594,
+                "normalized_gdp": 0.1151195014
+            },
+            "221": {
+                "Country Code": "ZMB",
+                "Country Name": "Zambia",
+                "GDP": 21203059080.3506774902,
+                "normalized_gdp": 0.1007612249
+            },
+            "222": {
+                "Country Code": "ZWE",
+                "Country Name": "Zimbabwe",
+                "GDP": 26217726717.3386383057,
+                "normalized_gdp": 0.1009417971
+            }
+        })
+
+    </script>
     <!--<script src="../../dist/three-globe.js"></script>-->
 </head>
 
@@ -16,21 +1359,22 @@
 
     <script>
         // TODO: Figure out data for actual population
-        fetch('https://raw.githubusercontent.com/vasturiano/globe.gl/master/example/datasets/ne_110m_admin_0_countries.geojson').then(res => res.json()).then(countries => {
+        fetch('https://raw.githubusercontent.com/ankitmehta94/Globe_Statistics/master/data.geojson').then(res => res.json()).then(countries => {
             const Globe = new ThreeGlobe()
                 .globeImageUrl('https://unpkg.com/three-globe@2.24.10/example/img/earth-blue-marble.jpg')
                 .polygonsData(countries.features.filter(d => d.properties.ISO_A2 !== 'AQ'))
                 .polygonCapMaterial((datum) => {
                     const texture = new THREE.TextureLoader().load(`https://raw.githubusercontent.com/ankitmehta94/Globe_Statistics/master/flags/${datum.properties.ISO_A2}.png`);
-                    console.log(texture, datum.properties.POSTAL)
                     const material = new THREE.MeshBasicMaterial({ map: texture });
                     return material
                 })
-                .polygonSideMaterial(() => 'rgba(0, 200, 0, 0.1)')
+                .polygonSideColor(() => 'rgba(0, 200, 0, 0.1)')
                 .polygonStrokeColor(() => '#111')
-            // .polygonAltitude((x) => x.properties.POP_RANK / 20);
 
-
+            setTimeout(() => Globe.polygonAltitude((datum) => {
+                const gdp_object = window.GDP.find((element) => element["Country Code"] === datum.properties.ISO_A3) || {}
+                return gdp_object["normalized_gdp"] || 0.1
+            }), 4000);
             // Setup renderer
             const renderer = new THREE.WebGLRenderer();
             renderer.setSize(window.innerWidth, window.innerHeight);
